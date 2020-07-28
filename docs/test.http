@@ -1,0 +1,39 @@
+// post input
+
+POST http://localhost:8080/input
+Content-Type: application/json
+
+{
+  "name": "john"
+}
+
+###
+
+
+// path param
+
+GET http://localhost:8080/hello/john
+Content-Type: application/json
+
+###
+
+
+// async
+
+GET http://localhost:8080/async/hello/john
+Content-Type: application/json
+
+###
+
+
+// interceptor
+
+GET http://localhost:8080/interceptor/hello
+Content-Type: application/json
+
+###
+
+// advice
+
+GET http://localhost:8080/hello/error
+Content-Type: application/json
